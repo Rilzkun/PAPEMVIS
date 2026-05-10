@@ -23,14 +23,13 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
-        PictureBox1 = New PictureBox()
         Label1 = New Label()
+        PictureBox1 = New PictureBox()
         FlowLayoutPanel1 = New FlowLayoutPanel()
-        Button1 = New Button()
         Panel2 = New Panel()
+        Button1 = New Button()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
@@ -44,6 +43,15 @@ Partial Class Form1
         Panel1.Size = New Size(800, 37)
         Panel1.TabIndex = 0
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(37, 9)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(191, 20)
+        Label1.TabIndex = 1
+        Label1.Text = "SISTEM MANAJEMEN KOST"
+        ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.justify_align_3489323
@@ -54,15 +62,6 @@ Partial Class Form1
         PictureBox1.TabIndex = 1
         PictureBox1.TabStop = False
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(37, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(191, 20)
-        Label1.TabIndex = 1
-        Label1.Text = "SISTEM MANAJEMEN KOST"
-        ' 
         ' FlowLayoutPanel1
         ' 
         FlowLayoutPanel1.BackColor = Color.Black
@@ -71,28 +70,35 @@ Partial Class Form1
         FlowLayoutPanel1.Size = New Size(166, 420)
         FlowLayoutPanel1.TabIndex = 1
         ' 
-        ' Button1
-        ' 
-        Button1.Location = New Point(23, 16)
-        Button1.Name = "Button1"
-        Button1.Size = New Size(94, 29)
-        Button1.TabIndex = 2
-        Button1.Text = "Profil"
-        Button1.UseVisualStyleBackColor = True
-        ' 
         ' Panel2
         ' 
-        Panel2.Controls.Add(Button1)
-        Panel2.Location = New Point(344, 203)
+        Panel2.Location = New Point(273, 165)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(117, 60)
-        Panel2.TabIndex = 3
+        Panel2.Size = New Size(163, 55)
+        Panel2.TabIndex = 2
+        ' 
+        ' Button1
+        ' 
+        Button1.BackColor = Color.White
+        Button1.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = SystemColors.WindowText
+        Button1.Image = My.Resources.Resources.person
+        Button1.ImageAlign = ContentAlignment.MiddleLeft
+        Button1.Location = New Point(307, 226)
+        Button1.Name = "Button1"
+        Button1.Padding = New Padding(25, 0, 0, 0)
+        Button1.Size = New Size(195, 33)
+        Button1.TabIndex = 3
+        Button1.Text = "     Profil"
+        Button1.TextAlign = ContentAlignment.MiddleLeft
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Button1)
         Controls.Add(Panel2)
         Controls.Add(FlowLayoutPanel1)
         Controls.Add(Panel1)
@@ -101,7 +107,6 @@ Partial Class Form1
         Panel1.ResumeLayout(False)
         Panel1.PerformLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        Panel2.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -109,7 +114,7 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
-    Friend WithEvents Button1 As Button
     Friend WithEvents Panel2 As Panel
+    Friend WithEvents Button1 As Button
 
 End Class
